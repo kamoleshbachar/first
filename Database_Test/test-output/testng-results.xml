@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="188" started-at="2014-03-02T03:33:44Z" finished-at="2014-03-02T03:33:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="188" started-at="2014-03-02T03:33:44Z" finished-at="2014-03-02T03:33:44Z">
+      <class name="kk.Test1">
+        <test-method status="PASS" signature="tet()[pri:0, instance:kk.Test1@1387498]" name="tet" duration-ms="172" started-at="2014-03-01T21:33:44Z" finished-at="2014-03-01T21:33:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tet -->
+      </class> <!-- kk.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
