@@ -1,0 +1,324 @@
+<html>
+	<head>
+		<title></title>
+		<link rel= "stylesheet" href="MyDoc.css">
+		
+		<script>
+			function validateForm(){
+			var x=document.forms["myForm"]["f_name"].value;
+			if (x==null || x=="")
+			  {
+			  alert("First name must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["l_Name"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Last name must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["vip"].value;
+			if (x==null || x=="")
+			  {
+			  alert("VIP Number must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["phone"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Pnone number must be filled out");
+			  return false;
+			  }var x=document.forms["myForm"]["email"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Email must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["address"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Address must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["city"].value;
+			if (x==null || x=="")
+			  {
+			  alert("City must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["state"].value;
+			if (x==null || x=="")
+			  {
+			  alert("State must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["zip"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Zip must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["paddress"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Address must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["pcity"].value;
+			if (x==null || x=="")
+			  {
+			  alert("City must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["pstate"].value;
+			if (x==null || x=="")
+			  {
+			  alert("State must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["pzip"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Zip must be filled out");
+			  return false;
+			  }
+			}
+		</script>
+		
+	</head>
+	<body bgcolor="#E6E6FA">
+		<center>
+		<h1> Reservation</h1></center>
+		
+			<div class="divTable">
+				<div class="divRow">
+					<div class="divCell" align="center">
+						<a  href="index.html">
+							<img src="kklogo.jpg" alt="Smiley face" width="300" height="300" class="e"><br>
+						</a>
+					</div>
+					<div class="divCell">
+						<form name="myForm" action="CusWelcome.asp" onsubmit="return validateForm()" method="post">
+							<input type='text' id='fn' name='f_name'placeholder ="First Name" class='text1'>
+							<input type='text' id='ln' name='l_Name' placeholder ="Last Name"class='text1'><br>
+							<input type='text' id='vp' name='vip' placeholder='VIP Number' class='text'><br>
+							<input type='text' id='ph' name='phone' placeholder='Phone' class='text'><br>
+							<input type='text' id='em' name='email' placeholder='Email' class='text'><br>
+							<table>
+								<tr>
+									<td>
+										Pick Up Address
+										<input type='text' id='ad' name='address' placeholder='Address' class='text'><br>
+										<input type='text' id='city' name='city' placeholder='City' class='text'><br>
+										<input type='text' id='st' name='state' placeholder='State' class='text'><br>
+										<input type='text' id='zp' name='zip' placeholder='Zip' class='text'><br>
+									</td>
+									<td>
+										Drop Off Address
+										<input type='text' id='pad' name='paddress' placeholder='Address' class='text'><br>
+										<input type='text' id='pciti' name='pcity' placeholder='City' class='text'><br>
+										<input type='text' id='pst' name='pstate' placeholder='State' class='text'><br>
+										<input type='text' id='pzp' name='pzip' placeholder='Zip' class='text'><br>
+									</td>
+									<td>
+										Stop Address
+										<input type='text' id='sad' name='saddress' placeholder='Address' class='text'><br>
+										<input type='text' id='sciti' name='scity' placeholder='City' class='text'><br>
+										<input type='text' id='sst' name='sstate' placeholder='State' class='text'><br>
+										<input type='text' id='szp' name='szip' placeholder='Zip' class='text'><br>
+									</td>
+								</tr>
+							</table><h3>
+							Month
+							<select> 
+								<option>Jan</option>
+								<option>Feb</option>
+								<option>Mar</option>
+								<option>Apr</option>
+								<option>May</option>
+								<option>June</option>
+								<option>Jul</option>
+								<option>Aug</option>
+								<option>Sep</option>
+								<option>Oct</option>
+								<option>Nov</option>
+								<option>Dec</option>
+							</select>
+							Day
+							<select>
+								<option value="Day">01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+							Year
+							<select>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+								<option>2019</option>
+								<option>2020</option>
+								<option>2021</option>
+								<option>2022</option>
+								<option>2023</option>
+							</select>
+							Time
+							<select>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>:
+							<select>
+								<option>00</option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+								<option>32</option>
+								<option>33</option>
+								<option>34</option>
+								<option>35</option>
+								<option>36</option>
+								<option>37</option>
+								<option>38</option>
+								<option>39</option>
+								<option>40</option>
+								<option>41</option>
+								<option>42</option>
+								<option>43</option>
+								<option>44</option>
+								<option>45</option>
+								<option>46</option>
+								<option>47</option>
+								<option>48</option>
+								<option>49</option>
+								<option>50</option>
+								<option>51</option>
+								<option>52</option>
+								<option>53</option>
+								<option>54</option>
+								<option>55</option>
+								<option>56</option>
+								<option>57</option>
+								<option>58</option>
+								<option>59</option>
+							</select>
+							<select><h3>
+								<option>AM</option>
+								<option>PM</option></h3>
+							</select>
+							</h3>
+							<textarea cols=40 rows=5 name=text>
+							</textarea><br>
+							<input type='submit' id='sb' name='submit' value= 'Next' class='ken6'>
+							<input type='reset' id='re' name='res' value= 'Reset' class='ken7'>
+						</form>
+					</div>
+				</div>
+				<div class="divRow">
+					<div class="divCell">
+					</div>
+			   </div>
+				<div class="divRow">
+					<div class="divCell">
+
+					</div>
+			   </div>
+
+			</div>
+		
+	 </body>
+<Style>
+
+    .divTable
+    {
+        display:  table;
+        width:auto;
+        
+    }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+
+    }
+
+    .divCell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:600px;
+		margin: 25px;
+
+    }
+
+
+
+</style>
+</html>

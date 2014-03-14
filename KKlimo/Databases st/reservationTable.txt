@@ -1,0 +1,27 @@
+create table reservation (
+Reservation_Num int(10) auto_increment primary key,
+Pass_VIP_Num int,
+Pass_F_Name varchar(40),
+Pass_L_Name varchar(40),
+Pass_Email varchar(50),
+Pass_Phone int(15),
+PuckUp_Address varchar(50),
+p_City varchar(40),
+P_State varchar(20),
+p_Zip int(5),
+Drop_Off_Address varchar(50),
+D_City varchar(40),
+D_State varchar(20),
+D_Zip int(5),
+Stop_Address varchar(50),
+S_City varchar(40),
+S_State varchar(20),
+S_Zip int(5),
+Comment varchar(500),
+foreign key (pass_VIP_Num) references pass_info(VIP_Num)
+);
+
+
+
+insert into reservation(Reservation_Num, Pass_VIP_Num, Pass_F_Name, Pass_L_Name, Pass_Email, Pass_Phone, PuckUp_Address, p_City, P_State, p_Zip, Drop_Off_Address, D_City, D_State, D_Zip ,Comment)
+values (121212,161050,'kamol','Ahammad','kamole@gamoli.com',6589745847,'184-55 89th Ave','Hollis','NY',45452,'Mothbari','Maharag pur','KH',90901,'Abcdefghijklmnopqrstuvwxyz');

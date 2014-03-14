@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<title></title>
+		<link rel= "stylesheet" href="MyDoc.css">
+		
+		<script>
+			function validateForm(){
+			var x=document.forms["myForm"]["f_name"].value;
+			if (x==null || x=="")
+			  {
+			  alert("First name must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["l_Name"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Last name must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["address"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Address must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["city"].value;
+			if (x==null || x=="")
+			  {
+			  alert("City must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["state"].value;
+			if (x==null || x=="")
+			  {
+			  alert("State must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["zip"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Zip must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["email"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Email must be filled out");
+			  return false;
+			  }
+			  var x=document.forms["myForm"]["pass"].value;
+			if (x==null || x=="")
+			  {
+			  alert("Email must Select your Password");
+			  return false;
+			  }
+			
+			var em=document.forms["myForm"]["email"].value;
+			var emr=document.forms["myForm"]["r_email"].value;
+			if (em!=emr)
+			  {
+			  alert("Email don't match");
+			  return false;
+			  }
+			  var em=document.forms["myForm"]["pass"].value;
+			var emr=document.forms["myForm"]["rpass"].value;
+			if (em!=emr)
+			  {
+			  alert("Password don't match");
+			  return false;
+			  }
+			 }
+		</script>
+		
+	</head>
+	<body bgcolor="#E6E6FA">
+		
+		
+			<div class="divTable">
+				<div class="divRow">
+					<div class="divCell" align="center">
+						<a  href="index.html"><img src="kklogo.jpg" alt="Smiley face" width="300" height="300" class="e"></a><br>
+					</div>
+					<div class="divCell">
+						<form action="CusWelcome.php" method= "POST" name = "myForm" onsubmit="return validateForm()">
+						<!form action="ReView.php" method= "POST" name = "myForm" onsubmit="return validateForm()">
+							<input type='text' id='fn' name='f_name'placeholder ="First Name" class='text1'>
+							<input type='text' id='ln' name='l_Name' placeholder ="Last Name"class='text1'><br>
+							<input type='text' id='ad' name='address' placeholder='Address' class='text'><br>
+							<input type='text' id='city' name='city' placeholder='City' class='text'><br>
+							<input type='text' id='st' name='state' placeholder='State' class='text'><br>
+							<input type='text' id='zp' name='zip' placeholder='Zip' class='text'><br>
+							<!input type='text' id='cu' name='country' placeholder='Country' class='text'>
+							<input type='text' id='ph' name='phone' placeholder='Phone' class='text'><br>
+							<input type='text' id='em' name='email' placeholder='Email' class='text'><br>
+							<input type='text' id='rem' name='r_email' placeholder='Re Enter Email' class='text'><br>
+							<input type='text' id='pa' name='pass' placeholder='Select Your Password' class='text'><br>
+							<input type='text' id='rpa' name='rpass' placeholder='Re Enter Password' class='text'><br>
+							<input type='submit' id='sb' name='submit' value= 'Next' class='ken6'>
+							<input type='reset' id='re' name='res' value= 'Reset' class='ken6'>
+						</form>
+					</div>
+				</div>
+				<div class="divRow">
+					<div class="divCell">
+						
+					</div>
+			   </div>
+				<div class="divRow">
+					<div class="divCell">
+						then
+					</div>
+			   </div>
+
+			</div>
+		
+	 </body>
+<Style>
+
+    .divTable
+    {
+        display:  table;
+        width:auto;
+        
+    }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+
+    }
+
+    .divCell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:600px;
+        background-color:#ccc;
+		margin: 25px;
+
+    }
+
+
+
+</style>
+</html>
